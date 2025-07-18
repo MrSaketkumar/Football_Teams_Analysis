@@ -18,32 +18,32 @@ Provide data-driven conclusions and recommendations for talent identification, p
 
 Data Cleaning & Preprocessing.
 
-Imputed with mean values for: Movement off the Ball, Penalty Success Rate,Big Game Performance.
+    Imputed with mean values for: Movement off the Ball, Penalty Success Rate,Big Game Performance.
 
 Exploratory Data Analysis (EDA)
 
-1) Footedness Distribution: Right-footed: 53.4% , Left-footed: 46.6%
+    1) Footedness Distribution: Right-footed: 53.4% , Left-footed: 46.6%
 
-2) Nationality vs. Footedness:  Spain had the most balanced footedness distribution, England had the highest number of right-footed players.
+    2) Nationality vs. Footedness:  Spain had the most balanced footedness distribution, England had the highest number of right-footed players.
 
-3) Average Goals by Nationality:
+    3) Average Goals by Nationality:
 
 Nation	Avg Goals
 
-Brazil	15.80
+    Brazil	15.80
 
-Spain	15.20
+    Spain	15.20
 
-France	14.90
+    France	14.90
 
-Germany	14.86
+    Germany	14.86
 
-England	14.47
+    England	14.47
 
 4) Avg Conversion Rate by Footedness:
 
-Left-footed	0.198
-Right-footed	0.201
+       Left-footed	0.198
+       Right-footed	0.201
 
 
 5)Statistical Analysis.
@@ -96,7 +96,7 @@ e) Clustering (K-Means)
 
  a) Features scaled using both StandardScaler and MinMaxScaler
 
- Final model used MinMaxScaler
+       Final model used MinMaxScaler
 
  b) Train-Test Split: 80% train, 20% test
 
