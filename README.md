@@ -46,61 +46,65 @@ Left-footed	0.198
 Right-footed	0.201
 
 
-Statistical Analysis.
+5)Statistical Analysis.
 
-Shapiro-Wilk Test: Both Consistency and Hold-up Play followed normal distributions.
+a) Shapiro-Wilk Test: Both Consistency and Hold-up Play followed normal distributions.
 
-ANOVA: Tested if Consistency varied by nationality.
-p-value = 0.192, so no significant difference found.
+b) ANOVA: Tested if Consistency varied by nationality.
 
-Correlation: Weak positive correlation between:
-Consistency and Hold-up Play: r = 0.145
+    p-value = 0.192, so no significant difference found.
 
-Linear Regression:
-Dependent Variable: Consistency
-R-squared: 0.021
-p-value (Hold-up Play): 0.00114 (significant)
-Small but statistically significant effect of Hold-up Play on Consistency.
+c) Correlation: Weak positive correlation between:
 
-Clustering (K-Means)
-Elbow Method:
+    Consistency and Hold-up Play: r = 0.145
 
-Determined optimal clusters = 2 based on WCSS plot.
+d) Linear Regression:
 
-KMeans Application:
-kmeans = KMeans(n_clusters=2)
-data['Clusters'] = kmeans.fit_predict(features)
+     Dependent Variable: Consistency
 
-Cluster 0: Best Strikers
+     R-squared: 0.021
 
-Cluster 1: Regular Strikers
+     p-value (Hold-up Play): 0.00114 (significant)
+ 
+     Small but statistically significant effect of Hold-up Play on Consistency.
 
-Labeling: Created Strikers_Type based on cluster label.
+e) Clustering (K-Means)
+  
+     Elbow Method: Determined optimal clusters = 2 based on WCSS plot.
 
-Cluster Averages:
+ e.1) KMeans Application:
 
-Best Strikers: Avg Total Contribution = 143.5
+     kmeans = KMeans(n_clusters=2)
 
-Regular Strikers: Avg Total Contribution = 118.4
+     Cluster 0: Best Strikers
 
-Classification Model
+     Cluster 1: Regular Strikers
 
-Objective:
+6) Labeling: Created Strikers_Type based on cluster label.
 
-Predict Strikers_Type using logistic regression.
+   Cluster Averages:
 
-Data Preparation:
+       Best Strikers: Avg Total Contribution = 143.5
 
-Features scaled using both StandardScaler and MinMaxScaler
+       Regular Strikers: Avg Total Contribution = 118.4
 
-Final model used MinMaxScaler
+7) Classification Model
 
-Train-Test Split: 80% train, 20% test
+   Objective: Predict Strikers_Type using logistic regression.
 
-Model Training:
+8) Data Preparation:
 
-model = LogisticRegression()
-model.fit(x_train, y_train).
+ a) Features scaled using both StandardScaler and MinMaxScaler
+
+ Final model used MinMaxScaler
+
+ b) Train-Test Split: 80% train, 20% test
+
+9) Model Training:
+
+        model = LogisticRegression()
+
+        model.fit(x_train, y_train).
 
 The analysis successfully integrated data preprocessing, EDA, statistical evaluation, clustering, and classification to offer a robust assessment of striker performanance.
 
